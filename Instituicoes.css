@@ -1,0 +1,17 @@
+.carousel img{
+    height: 340px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 5); /*Aumenta o tamanho do carrossel*/
+  }
+  
+  .carousel img:first-child{
+    margin-left: 0px;
+  }
+  
+  .carousel img:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+  }
+  
