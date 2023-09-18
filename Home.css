@@ -2,3 +2,15 @@ h2 {
     text-align: center;
     font-family: 'Lobster', cursive;
 }
+
+/* Estilização do ícone e do texto */
+i.fas.fa-map-marker-alt {
+    color: red;  /* Cor do ícone de localização */
+}
+
+span {
+    margin-top: 10px;  /* Espaçamento entre o ícone e o texto */
+    font-size: 16px;  /* Tamanho da fonte do texto */
+    font-weight: bold;  /* Peso da fonte do texto */
+}
+
