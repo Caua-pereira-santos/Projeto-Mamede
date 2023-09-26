@@ -1,31 +1,29 @@
-const carousel = document.querySelector(".carousel");
-const images = carousel.querySelectorAll("img");
-const leftArrow = document.querySelector("#left");
-const rightArrow = document.querySelector("#right");
-let currentIndex = 0;
+function showModal(info) {
+  const modal = document.getElementById("imageModal");
+  const imageInfo = document.getElementById("imageInfo");
 
-// Função para exibir a imagem atual
-function showImage(index) {
-  images.forEach((img, i) => {
-    if (i === index) {
-      img.style.display = "block";
-    } else {
-      img.style.display = "none";
-    }
-  });
+  imageInfo.innerHTML = info;
+  modal.style.display = "block";
 }
 
-// Listener para o botão esquerdo
-leftArrow.addEventListener("click", () => {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  showImage(currentIndex);
-});
+// Função para fechar o modal
+function closeModal() {
+  const modal = document.getElementById("imageModal");
+  modal.style.display = "none";
+}
 
-// Listener para o botão direito
-rightArrow.addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % images.length;
-  showImage(currentIndex);
-});
+document.addEventListener("DOMContentLoaded", function () {
+  const clickableImages = document.querySelectorAll(".clickable-image");
 
-// Exibir a primeira imagem ao carregar a página
-showImage(currentIndex);
+  clickableImages.forEach(function (image) {
+    image.addEventListener("click", function () {
+      const info = image.getAttribute("data-info");
+      showModal(info);
+    });
+  });
+
+  const modal = document.getElementById("imageModal");
+  const closeButton = modal.querySelector(".close");
+
+  closeButton.addEventListener("click", closeModal);
+});
