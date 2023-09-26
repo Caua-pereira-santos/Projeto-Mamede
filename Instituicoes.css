@@ -1,17 +1,43 @@
-.carousel img{
-    height: 340px;
-    object-fit: cover;
-    user-select: none;
-    margin-left: 14px;
-    width: calc(100% / 5); /*Aumenta o tamanho do carrossel*/
-  }
-  
-  .carousel img:first-child{
-    margin-left: 0px;
-  }
-  
-  .carousel img:hover {
-    transform: scale(1.02);
-    transition: transform 0.3s ease-in-out;
-  }
-  
+h1 {
+  font-size: 50px; 
+  text-align: center; 
+  font-weight: bold; 
+  font-family: Arial, Tahoma, sans-serif; 
+}
+
+p {
+  font-size: 25px; 
+  text-align: center; 
+  font-weight: bold; 
+  font-family: Arial, Tahoma, sans-serif; 
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 60%;
+  max-width: 600px; 
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para o botão de fechar o modal */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
