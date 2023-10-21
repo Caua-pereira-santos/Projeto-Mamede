@@ -61,3 +61,17 @@ span {
     background-color: #222; /* Fundo levemente mais claro ao passar o mouse */
 }
 
+/*Configurações adicionais do Footer*/
+
+.footer-custom {
+    background-color: #000; /* Fundo preto */
+    color: #FFD700; /* Letras amarelas */
+}
+.footer-custom a {
+    color: #FFD700; /* Cor das âncoras amarelas */
+    text-decoration: none;
+}
+.footer-custom a:hover {
+    text-decoration: underline;
+}
+
