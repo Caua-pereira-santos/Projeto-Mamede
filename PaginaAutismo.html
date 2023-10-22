@@ -10,6 +10,12 @@
 </head>
 <body>
 
+    <div class="font-resize-bar">
+        <span>A+ | A-</span>
+    </div>
+
+   
+
 <nav class="navbar navbar-expand-lg navbar-custom">
     <a class="navbar-brand" href="PaginaHome.html">Logo</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,6 +51,13 @@
         </ul>
     </div>
 </nav>
+
+<div class="font-resize-popup" id="fontResizePopup">
+    <br>
+    <p>Para aumentar ou diminuir a fonte no nosso site, utilize os atalhos Ctrl+ (para aumentar) e Ctrl- (para diminuir) no seu teclado.</p>
+    <button class="close-button" onclick="closePopup()">Fechar</button>
+    <span class="popup-close-icon" onclick="closePopup()">X</span>
+</div>
 
 <!--Espaço para o conteúdo-->
 <h1>Transtorno do espectro autista (TEA)</h1>
@@ -251,6 +264,18 @@
         </div>
     </div>
 </footer>
+
+<script>
+
+    document.querySelector('.font-resize-bar').addEventListener('click', function() {
+        document.getElementById('fontResizePopup').style.display = 'block';
+    });
+    
+    function closePopup() {
+        document.getElementById('fontResizePopup').style.display = 'none';
+    }
+    
+    </script>
 <!-- Scripts necessários para o Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>

@@ -22,6 +22,11 @@
         text-align: justify;
     }
 </style>
+
+<div class="font-resize-bar">
+    <span>A+ | A-</span>
+</div>
+
     
 
 <nav class="navbar navbar-expand-lg navbar-custom">
@@ -59,6 +64,14 @@
         </ul>
     </div>
 </nav>
+
+<div class="font-resize-popup" id="fontResizePopup">
+    <br>
+    <p>Para aumentar ou diminuir a fonte no nosso site, utilize os atalhos Ctrl+ (para aumentar) e Ctrl- (para diminuir) no seu teclado.</p>
+    <button class="close-button" onclick="closePopup()">Fechar</button>
+    <span class="popup-close-icon" onclick="closePopup()">X</span>
+</div>
+
 
 
 <!--Espaço para o conteúdo-->
@@ -210,6 +223,20 @@
 </div>
 
 <br><br>
+
+<script>
+
+document.querySelector('.font-resize-bar').addEventListener('click', function() {
+    document.getElementById('fontResizePopup').style.display = 'block';
+});
+
+function closePopup() {
+    document.getElementById('fontResizePopup').style.display = 'none';
+}
+
+</script>
+
+
 
 
 <!-- Inicio do Footer -->
