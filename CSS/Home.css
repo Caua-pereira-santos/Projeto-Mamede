@@ -93,3 +93,18 @@ span {
     max-width: 100%;
     height: auto;
 }
+
+.row.equal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex: 1 0 auto;
+}
