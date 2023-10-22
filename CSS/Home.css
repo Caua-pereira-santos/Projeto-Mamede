@@ -75,3 +75,21 @@ span {
     text-decoration: underline;
 }
 
+/*Configuração dos círculos*/
+
+.circle-container {
+    text-align: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.circle img {
+    max-width: 100%;
+    height: auto;
+}
