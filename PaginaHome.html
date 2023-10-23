@@ -21,6 +21,14 @@
     .card-title {
         text-align: justify;
     }
+
+      /* Otimizações para telas pequenas */
+      @media (max-width: 900px) {
+        .navbar .nav-item {
+            flex: 1; /* Faz cada item de navegação ocupar espaço igual */
+            text-align: center; /* Alinha o texto ao centro */
+        }
+    }
 </style>
 
 <div class="font-resize-bar">
@@ -35,7 +43,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav mr-auto"> <!-- 'mr-auto' empurra o conteúdo subsequente para a direita -->
             <li class="nav-item active">
                 <a class="nav-link" href="PaginaHome.html">Página Inicial</a>
             </li>
@@ -49,10 +57,10 @@
                     <a class="dropdown-item" href="/NavbarDropdown/PaginaDefIntelectual.html">Deficiência Intelectual</a>
                 </div>
             </li>
-            <!-- Adicionar um espaço (pode ajustar o tamanho conforme necessário) -->
-            <li class="nav-item" style="width: 610px;"></li>
-            <!-- Adicionar a classe ml-auto aos itens para empurrá-los para a direita -->
-            <li class="nav-item ml-auto">
+        </ul>
+        <ul class="navbar-nav">
+            <!-- Itens alinhados à direita -->
+            <li class="nav-item">
                 <a class="nav-link" href="PaginaAutismo.html">Autismo</a>
             </li>
             <li class="nav-item">
@@ -233,6 +241,37 @@ document.querySelector('.font-resize-bar').addEventListener('click', function() 
 function closePopup() {
     document.getElementById('fontResizePopup').style.display = 'none';
 }
+
+document.addEventListener('keydown', function(event) {
+    if (event.ctrlKey && (event.key === '+' || event.key === '=')) {  // Para alguns navegadores, "+" é reconhecido como "="
+        increaseFontSize();
+    } else if (event.ctrlKey && event.key === '-') {
+        decreaseFontSize();
+    }
+});
+
+const MAX_FONT_SIZE = 120; // percentual máximo
+const MIN_FONT_SIZE = 80; // percentual mínimo
+let currentFontSize = 100;
+
+function increaseFontSize() {
+    if (currentFontSize < MAX_FONT_SIZE) {
+        currentFontSize += 10;
+        adjustFontSize();
+    }
+}
+
+function decreaseFontSize() {
+    if (currentFontSize > MIN_FONT_SIZE) {
+        currentFontSize -= 10;
+        adjustFontSize();
+    }
+}
+
+function adjustFontSize() {
+    document.body.style.fontSize = currentFontSize + '%';
+}
+
 
 </script>
 

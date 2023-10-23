@@ -22,6 +22,8 @@ i.fas.fa-map-marker-alt {
     color: #ddd; /* Cor ao passar o mouse ou ao focar */
 }
 
+
+
 span {
     margin-top: 10px;  /* Espaçamento entre o ícone e o texto */
     font-size: 16px;  /* Tamanho da fonte do texto */
@@ -148,5 +150,19 @@ span {
     top: 5px;
     right: 10px;
     cursor: pointer;
+}
+
+/*Letra maior e menor*/
+
+body {
+    font-size: 100%;
+}
+
+.font-size-110 {
+    font-size: 110%;
+}
+
+.font-size-120 {
+    font-size: 120%;
 }
 

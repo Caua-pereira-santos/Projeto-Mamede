@@ -11,45 +11,57 @@
 </head>
 <body>
 
+    <style>
+        
+    
+          /* Otimizações para telas pequenas */
+          @media (max-width: 900px) {
+            .navbar .nav-item {
+                flex: 1; /* Faz cada item de navegação ocupar espaço igual */
+                text-align: center; /* Alinha o texto ao centro */
+            }
+        }
+    </style>
+
     <div class="font-resize-bar">
         <span>A+ | A-</span>
     </div>
 
-<nav class="navbar navbar-expand-lg navbar-custom">
-    <a class="navbar-brand" href="PaginaHome.html">Logo</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="PaginaHome.html">Página Inicial</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Tipos de Deficiência
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/NavbarDropdown/PaginaDefFísica.html">Deficiência Física</a>
-                    <a class="dropdown-item" href="/NavbarDropdown/PaginaDefVisual.html">Deficiência Visual</a>
-                    <a class="dropdown-item" href="/NavbarDropdown/PaginaDefIntelectual.html">Deficiência Intelectual</a>
-                </div>
-            </li>
-            <!-- Adicionar um espaço (pode ajustar o tamanho conforme necessário) -->
-            <li class="nav-item" style="width: 610px;"></li>
-            <!-- Adicionar a classe ml-auto aos itens para empurrá-los para a direita -->
-            <li class="nav-item ml-auto">
-                <a class="nav-link" href="PaginaAutismo.html">Autismo</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="PaginaObjetos.html">Objetos Educacionais</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="PaginaInstituicoes.html">Instituições</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="PaginaHome.html">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto"> <!-- 'mr-auto' empurra o conteúdo subsequente para a direita -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="PaginaHome.html">Página Inicial</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Tipos de Deficiência
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/NavbarDropdown/PaginaDefFísica.html">Deficiência Física</a>
+                        <a class="dropdown-item" href="/NavbarDropdown/PaginaDefVisual.html">Deficiência Visual</a>
+                        <a class="dropdown-item" href="/NavbarDropdown/PaginaDefIntelectual.html">Deficiência Intelectual</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <!-- Itens alinhados à direita -->
+                <li class="nav-item">
+                    <a class="nav-link" href="PaginaAutismo.html">Autismo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="PaginaObjetos.html">Objetos Educacionais</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="PaginaInstituicoes.html">Instituições</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
 <div class="font-resize-popup" id="fontResizePopup">
     <br>
