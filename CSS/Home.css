@@ -3,10 +3,7 @@ h2 {
     font-family: 'Lobster', cursive;
 }
 
-/* Estilização do ícone e do texto */
-i.fas.fa-map-marker-alt {
-    color: red;  /* Cor do ícone de localização */
-}
+
 
 /*Configuração das cores da NAV*/
 
@@ -77,39 +74,31 @@ span {
     text-decoration: underline;
 }
 
-/*Configuração dos círculos*/
+/*Configuração retângulos*/
 
-.circle-container {
-    text-align: center;
+
+.custom-rectangle {
+    background-color: #888;  /* Cor cinza */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo de texto */
+    border-radius: 20px; /* Borda arredondada */
+
 }
 
-.circle {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto;
+
+/* Você pode ajustar a largura e altura aqui */
+.custom-rectangle {
+    width: 250px;  /* Largura */
+    height: 340px; /* Altura */
 }
 
-.circle img {
-    max-width: 100%;
-    height: auto;
+.custom-rectangle img {
+    max-width: 100%; /* Garante que a imagem se ajuste ao retângulo */
+    margin-bottom: 10px; /* Espaçamento entre a imagem e o título */
 }
 
-.row.equal {
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.card {
-    flex: 1 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.card-body {
-    flex: 1 0 auto;
-}
 
 /*Configuração do POP-UP*/
 
