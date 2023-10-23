@@ -5,7 +5,7 @@ h2 {
 
 .home {
     text-align: center;
-    
+
 }
 
 
@@ -160,3 +160,17 @@ body {
     font-size: 120%;
 }
 
+/*Configuração das cores da Div*/
+
+
+.my-rectangle {
+    background-color: #90ee90; /* verde claro */
+}
+
+.my-news-card {
+    background-color: #ffb6c1; /* rosa claro */
+}
+
+.my-footer {
+    background-color: #d152d1; /* orchid */
+}
