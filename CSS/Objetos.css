@@ -9,6 +9,15 @@ p {
   text-align: justify;
 }
 
+.col-md-3 img {
+
+  width: 150px;  /* Largura */
+  height: 150px; /* Altura */
+  margin: auto;
+  display: block;
+}
+ 
+
 .row.equal {
   display: flex;
   flex-wrap: wrap;
