@@ -1,0 +1,54 @@
+@import url('https://fonts.google.com/noto/specimen/Noto+Serif/tester?query=nOTO');
+
+  * {
+    margin: 15;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  body {
+    font-size: 100%;
+    background: #000000;
+  }
+    
+  #titulo {
+    font-family: 'Noto Serif SC', serif;
+    color: #ffffff ;
+    margin: auto;
+    text-align: center;
+    margin-right: 0px;
+    /*margin-left: 25%;
+    position: absolute;*/
+
+    /*margin-left: 20%;
+    /*margin-left: 30%;
+    position: absolute;*/
+  }
+
+  
+  .separador {
+    border-top: 0.5px solid #ffffff;
+  }
+  
+  .conteudo {
+    padding:0px;
+    color: #ffffff ;
+    align-items: center;
+    font-family: 'Noto Serif SC', serif;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  
+  .indice {
+    font-family: 'Noto Serif SC', serif;
+    color: #ffffff ;
+  }
+  
+  div p {
+    font-size: 18px;
+    padding-left: 20px;
+    text-align: justify;
+  }
