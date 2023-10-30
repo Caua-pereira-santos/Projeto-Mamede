@@ -1,10 +1,12 @@
 h2 {
     text-align: center;
     font-family: 'Lobster', cursive;
+    color: #ddd;
 }
 
 .home {
     text-align: center;
+    color: #ddd;
 
 }
 
@@ -21,7 +23,7 @@ h2 {
 }
 .navbar-custom .nav-link:hover, 
 .navbar-custom .nav-link:focus {
-    color: #ddd; /* Cor ao passar o mouse ou ao focar */
+    color: #e6d710; /* Cor ao passar o mouse ou ao focar */
 }
 
 
@@ -36,7 +38,7 @@ span {
 .navbar .navbar-nav .nav-link, 
 .navbar .navbar-nav .active .nav-link,
 .navbar .navbar-nav .dropdown-item {
-    color: #ddd01bd2;
+    color: #ddd;
 }
 
 /* Estilo para os links da navbar, incluindo o link ativo, quando o mouse passa sobre eles */
@@ -50,7 +52,7 @@ span {
 .navbar .navbar-nav .nav-link:active, 
 .navbar .navbar-nav .active .nav-link:active,
 .navbar .navbar-nav .dropdown-item:active {
-    color: #faea07;  /* um tom de laranja ainda mais escuro para quando o link é clicado */
+    color: #e6d710;  /* um tom de laranja ainda mais escuro para quando o link é clicado */
 }
 
 .navbar-custom .dropdown-menu {
@@ -61,18 +63,18 @@ span {
 }
 .navbar-custom .dropdown-item:hover, 
 .navbar-custom .dropdown-item:focus {
-    color: #ddd; /* Cor ao passar o mouse ou ao focar */
-    background-color: #222; /* Fundo levemente mais claro ao passar o mouse */
+    color: #e6d710; /* Cor ao passar o mouse ou ao focar */
+    background-color: #e6d8108c; /* Fundo levemente mais claro ao passar o mouse */
 }
 
 /*Configurações adicionais do Footer*/
 
 .footer-custom {
     background-color: #000; /* Fundo preto */
-    color: #FFD700; /* Letras amarelas */
+    color: #ddd; /* Letras amarelas */
 }
 .footer-custom a {
-    color: #FFD700; /* Cor das âncoras amarelas */
+    color: #ddd; /* Cor das âncoras amarelas */
     text-decoration: none;
 }
 .footer-custom a:hover {
@@ -164,13 +166,40 @@ body {
 
 
 .my-rectangle {
-    background-color: #90ee90; /* verde claro */
+    background-color: #000000/* Preto */
 }
 
 .my-news-card {
-    background-color: #ffb6c1; /* rosa claro */
+    background-color: #000000;
+    ;
+    /* Azul escuro */
 }
 
 .my-footer {
-    background-color: #d152d1; /* orchid */
+    background-color:  #6600cc;
+    /* Azul */
+}
+
+hr.estilizado {
+    border: none;
+    height: 5px; /* Ajuste a altura conforme desejar */
+    background: linear-gradient(to right, green, orange, yellow, blue, purple);
+    margin: 0px 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.imagem {
+    width: 450px;  /* Ajuste para o tamanho desejado */
+    height: 450px; /* Ajuste para o tamanho desejado */
+    margin-right: 20px;
+}
+
+.texto {
+    text-align: justify;
+    max-width: 600px; /* Ajuste para a largura desejada */
+    color: #ddd;
 }
