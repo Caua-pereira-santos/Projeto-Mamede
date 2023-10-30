@@ -187,10 +187,7 @@ hr.estilizado {
     margin: 0px 0;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-}
+
 
 .imagem {
     width: 450px;  /* Ajuste para o tamanho desejado */

@@ -26,10 +26,12 @@
     position: absolute;*/
   }
 
+.colorir{
+  background-color: #ffffff;
+}
+ 
   
-  .separador {
-    border-top: 0.5px solid #ffffff;
-  }
+  
   
   .conteudo {
     padding:0px;
