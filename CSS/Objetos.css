@@ -17,6 +17,19 @@ p {
   display: block;
 }
  
+body {
+  background-color: #000; /* Define a cor de fundo para preto */
+  color: #FFF; /* Define a cor do texto para branco */
+}
+
+.square {
+  background-color:#3E3E3E;  /* Cor de fundo cinza claro */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra leve abaixo e à direita da div */
+  border-radius: 8px;  /* Borda levemente arredondada */
+  padding: 15px;  /* Espaçamento interno para garantir que o conteúdo não fique muito perto das bordas */
+  margin: 10px 10px 5px 0px;  /* Espaçamento vertical para evitar que as sombras de divs adjacentes se sobreponham */
+  align-items: center;
+}
 
 
 
