@@ -1,11 +1,5 @@
 
-.navbar-custom {
-    background-color: #000;
-    color: #FFD700;
-}
-.navbar-custom a {
-    color: #FFD700;
-}
+
 
 .form-container {
     padding: 20px;
@@ -19,12 +13,5 @@
 .form-container textarea,
 .form-container button {
     margin-bottom: 15px;
-}
-.footer-custom {
-    background-color: #000;
-    color: #FFD700;
-}
-.footer-custom a {
-    color: #FFD700;
 }
 

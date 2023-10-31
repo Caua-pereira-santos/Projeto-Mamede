@@ -10,6 +10,10 @@ h2 {
 
 }
 
+body{
+    background-color: #000;
+}
+
 
 
 /*Configuração das cores da NAV*/
@@ -200,3 +204,21 @@ hr.estilizado {
     max-width: 600px; /* Ajuste para a largura desejada */
     color: #ddd;
 }
+
+/* Estilize o contêiner de conteúdo */
+.my-news-card .container .content {
+    display: flex; /* Use um display flex para alinhar elementos lado a lado */
+    align-items: center; /* Centralize verticalmente os elementos */
+}
+
+/* Estilize a imagem */
+.my-news-card .container .content .imagem {
+    max-width: 50%; /* Defina a largura máxima da imagem (ajuste conforme necessário) */
+    margin-right: 20px; /* Adicione um espaço à direita da imagem para separar do texto */
+}
+
+/* Estilize o texto */
+.my-news-card .container .content .texto {
+    max-width: 50%; /* Defina a largura máxima do texto (ajuste conforme necessário) */
+}
+      
