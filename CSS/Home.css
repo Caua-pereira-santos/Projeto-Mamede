@@ -5,13 +5,25 @@ h2 {
 }
 
 .home {
+    font-family: 'Noto Serif SC', serif;
+    color: #ffffff ;
     text-align: center;
-    color: #ddd;
-
 }
+
+
 
 body{
     background-color: #000;
+}
+
+.pn{
+    font-family: 'Noto Serif SC', serif;
+    color: #ffffff ;
+}
+
+.num{
+    font-family: 'Noto Serif SC', serif;
+    color: #ffffff ;
 }
 
 
@@ -89,7 +101,7 @@ span {
 
 
 .custom-rectangle {
-    background-color: #888;  /* Cor cinza */
+    background-color: #61727C;  /* Cor cinza */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
     padding: 20px; /* Espaçamento interno */
     text-align: center; /* Centraliza o conteúdo de texto */
@@ -202,7 +214,8 @@ hr.estilizado {
 .texto {
     text-align: justify;
     max-width: 600px; /* Ajuste para a largura desejada */
-    color: #ddd;
+    font-family: 'Noto Serif SC', serif;
+    color: #ffffff ;
 }
 
 /* Estilize o contêiner de conteúdo */
